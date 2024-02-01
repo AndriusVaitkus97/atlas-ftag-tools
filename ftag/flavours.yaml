@@ -74,6 +74,23 @@
   colour: "#38761D"
   category: xbb
 
+# Extended Xbb labels
+- name: qcdb
+  label: QCD (single $b$)
+  cuts: ["R10TruthLabel_R22v1 == 10", "GhostBHadronsFinalCount == 1"]
+  colour: "#b6f59d"
+  category: xbb-extended
+- name: qcdbb
+  label: QCD ($b\bar{b}$)
+  cuts: ["R10TruthLabel_R22v1 == 10", "GhostBHadronsFinalCount >= 2"]
+  colour: "#6cad51"
+  category: xbb-extended
+- name: qcd-other
+  label: QCD (other)
+  cuts: ["R10TruthLabel_R22v1 == 10", "GhostBHadronsFinalCount == 0"]
+  colour: "#38761D"
+  category: xbb-extended
+
 # partonic labelling
 - name: upjets
   label: $u$-jets
