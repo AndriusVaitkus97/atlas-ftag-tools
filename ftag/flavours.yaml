@@ -95,10 +95,20 @@
   cuts: ["R10TruthLabel_R22v1 == 10", "GhostBHadronsFinalCount >= 2"]
   colour: "#6cad51"
   category: xbb-extended
-- name: qcd-other
-  label: QCD (other)
+- name: qcd_no_b
+  label: QCD (no $b$)
   cuts: ["R10TruthLabel_R22v1 == 10", "GhostBHadronsFinalCount == 0"]
   colour: "#38761D"
+  category: xbb-extended
+- name: qcd_upto_1b
+  label: QCD (<2$b$)
+  cuts: ["R10TruthLabel_R22v1 == 10", "GhostBHadronsFinalCount <= 1"]
+  colour: "#b6f59d"
+  category: xbb-extended
+- name: qcd_bb_placeholder
+  label: QCD ($b\bar{b}$)
+  cuts: ["R10TruthLabel_R22v1 == 10"]
+  colour: "#6cad51"
   category: xbb-extended
 
 # partonic labelling
